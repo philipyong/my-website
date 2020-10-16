@@ -3,21 +3,19 @@ import styled from "styled-components/macro";
 export const Container = styled.div``;
 
 export const Item = styled.div`
+  display: flex;
+  margin: 20px;
   overflow: hidden;
 `;
 
 export const Inner = styled.div`
-  background-image: url(${({ companyLogo }) => companyLogo});
   background-color: white;
-  background-position: ${({ position }) => position};
-  height: 350px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  max-height: 400px;
+  display: flex;
+  flex-direction: ${({ direction }) =>
+    direction === "right" ? "row" : "row-reverse"};
 
   border-radius: 20px 20px 20px 20px;
-
-  padding-top: 20px;
-  padding-left: 20px;
 
   align-items: center;
   justify-content: space-between;
@@ -27,32 +25,91 @@ export const Inner = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: column;
+    max-height: unset;
+    max-width: 600px;
   }
+`;
+
+export const Group = styled.div`
+  padding: 10px;
 `;
 
 export const Title = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: ${({ direction }) =>
+    direction === "right" ? "row" : "row-reverse"};
   justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
-export const CompanyName = styled.h1``;
+export const CompanyName = styled.h1`
+  font-weight: bold;
+  font-size: 36px;
+  text-align: left;
+  margin: 0;
 
-export const Duration = styled.h2``;
+  @media (max-width: 1000px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+`;
 
-export const Position = styled.h2``;
+export const Duration = styled.h2`
+  margin: 0;
+`;
 
-export const Description = styled.p``;
+export const Position = styled.h2`
+  text-align: ${({ direction }) => (direction === "right" ? "left" : "right")};
+
+  @media (max-width: 1000px) {
+    text-align: unset;
+  }
+`;
+
+export const Description = styled.p`
+  margin-bottom: 20px;
+  text-align: ${({ direction }) => (direction === "right" ? "left" : "right")};
+
+  @media (max-width: 1000px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: unset;
+  }
+`;
 
 export const Framework = styled.img`
   height: 50px;
   width: 50px;
   object-fit: contain;
   margin-right: 10px;
+  cursor: pointer;
 
   &:last-of-type {
     margin-right: 0;
   }
 `;
 
-export const FrameworkList = styled.div``;
+export const FrameworkList = styled.div`
+  text-align: ${({ direction }) => (direction === "right" ? "left" : "right")};
+
+  @media (max-width: 1000px) {
+    text-align: unset;
+  }
+`;
+
+export const CompanyLogo = styled.img`
+  width: 400px;
+  height: 100%;
+  border-radius: ${({ direction }) =>
+    direction === "right" ? "0 20px 20px 0" : "20px 0 0 20px"};
+  cursor: pointer;
+  flex-shrink: 0;
+  @media (max-width: 1000px) {
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+`;

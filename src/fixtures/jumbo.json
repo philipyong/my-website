@@ -1,17 +1,83 @@
 [
   {
     "id": 1,
+    "direction": "right",
     "companyName": "CRAFT la",
     "position": "Internship | Full-stack Web Developer",
-    "description": "Before joining CRAFT la, I didn't like the idea of Web Development since I'm not strong in designs. With this opportunity to be a part of CRAFT la, I really wanted to dive deep into Web Development to see if it would be something I'd love.",
+    "description": [
+      {
+        "id": 1,
+        "direction": "right",
+        "content": "Before joining CRAFT la, I didn't like the idea of Web Development since I'm not strong in designs. With this opportunity to be a part of CRAFT la, I really wanted to dive deep into Web Development to see if it would be something I'd love. Through this internship, I got to mess with React and GraphQL as an introduction to the world of Web Dev and I fell in love with it!"
+      },
+      {
+        "id": 2,
+        "direction": "right",
+        "content": "During this internship, I was tasked with developing an Order Management System (OMS) using a single-page application. I developed the front-end using React while styling with PrimeReact, I then used Apollo GraphQL as the back-end. I was also tasked with creating small responsive React Apps that will be used on the company’s WordPress site."
+      }
+    ],
     "duration": "August 2020 - October 2020",
     "companyLogo": "/images/company/craftla.jpg",
     "frameworks": [
-      { "id": 1, "name": "react" },
-      { "id": 2, "name": "apollo" },
-      { "id": 3, "name": "graphql" },
-      { "id": 4, "name": "javascript" },
-      { "id": 5, "name": "css" }
-    ]
+      { "id": 1, "name": "react", "link": "https://reactjs.org/" },
+      { "id": 2, "name": "apollo", "link": "https://www.apollographql.com/" },
+      { "id": 3, "name": "graphql", "link": "https://graphql.org/" },
+      {
+        "id": 4,
+        "name": "primereact",
+        "link": "https://www.primefaces.org/primereact/"
+      },
+      {
+        "id": 5,
+        "name": "aws-s3",
+        "link": "https://aws.amazon.com/s3/"
+      },
+      { "id": 6, "name": "javascript", "link": "https://www.javascript.com/" },
+      { "id": 7, "name": "css", "link": "https://en.wikipedia.org/wiki/CSS" }
+    ],
+    "link": "https://craftla.com.my/"
+  },
+  {
+    "id": 2,
+    "direction": "left",
+    "companyName": "CTI Resources",
+    "position": "Internship | Computer Science Intern",
+    "description": [
+      {
+        "id": 1,
+        "direction": "left",
+        "content": "My first internship experience! After finishing my first semester at Western Michigan University, I went back to my home country, Malaysia, during the summer break. Without much to do, I decided to seek an internship to get to know more about my degree. After sending out my resume, I received an opportunity to work at CTI Resources!"
+      },
+      {
+        "id": 2,
+        "direction": "left",
+        "content": "During this internship, I was only skilled with Java but had to work using C#. Since C# and Java are kind of similar, I understood it pretty quickly. Since the company does SCADA, I got to mess with Azure Cloud. I was then tasked to develop a C# program to communicate with it. After that, I given a RaspBerry Pi to develop an ASP.net site that runs within the company’s network. I also assisted in the testing of new products in the company."
+      }
+    ],
+    "duration": "May 2019 – July 2019",
+    "companyLogo": "/images/company/cti-resources.png",
+    "frameworks": [
+      {
+        "id": 1,
+        "name": "csharp",
+        "link": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+      },
+      {
+        "id": 2,
+        "name": "azure",
+        "link": "https://azure.microsoft.com/en-us/"
+      },
+      {
+        "id": 3,
+        "name": "asp-dot-net",
+        "link": "https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1"
+      },
+      {
+        "id": 4,
+        "name": "raspberry-pi",
+        "link": "https://www.raspberrypi.org/"
+      }
+    ],
+    "link": "https://www.ctiresources.com.my/"
   }
 ]

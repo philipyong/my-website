@@ -3,6 +3,7 @@ import {
   Container,
   Inner,
   Item,
+  Group,
   Title,
   CompanyName,
   Position,
@@ -10,6 +11,7 @@ import {
   FrameworkList,
   Framework,
   Duration,
+  CompanyLogo,
 } from "./styles/jumbotron";
 
 export default function Jumbotron({ children, ...restProps }) {
@@ -24,17 +26,23 @@ Jumbotron.Container = function JumbotronContainer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 };
 
-Jumbotron.Title = function JumbotronTitle({
-  companyName,
-  duration,
+Jumbotron.Group = function JumbotronGroup({ children, ...restProps }) {
+  return <Group {...restProps}>{children}</Group>;
+};
+
+Jumbotron.Title = function JumbotronTitle({ children, ...restProps }) {
+  return <Title {...restProps}>{children}</Title>;
+};
+
+Jumbotron.CompanyName = function JumbotronCompanyName({
+  children,
   ...restProps
 }) {
-  return (
-    <Title>
-      <CompanyName {...restProps}>{companyName}</CompanyName>
-      <Duration>{duration}</Duration>
-    </Title>
-  );
+  return <CompanyName {...restProps}>{children}</CompanyName>;
+};
+
+Jumbotron.Duration = function JumbotronDuration({ children, ...restProps }) {
+  return <Duration {...restProps}>{children}</Duration>;
 };
 
 Jumbotron.Position = function JumbotronPosition({ children, ...restProps }) {
@@ -49,15 +57,19 @@ Jumbotron.Description = function JumbotronDescription({
 };
 
 Jumbotron.FrameworkList = function JumbotronFrameworkList({
-  frameworks,
   children,
   ...restProps
 }) {
-  return (
-    <FrameworkList {...restProps}>
-      {frameworks.map((item) => (
-        <Framework key={item.id} src={`/images/icons/${item.name}.png`} />
-      ))}
-    </FrameworkList>
-  );
+  return <FrameworkList {...restProps}>{children}</FrameworkList>;
+};
+
+Jumbotron.Framework = function JumbotronFramework({ children, ...restProps }) {
+  return <Framework {...restProps}>{children}</Framework>;
+};
+
+Jumbotron.CompanyLogo = function JumbotronCompanyLogo({
+  children,
+  ...restProps
+}) {
+  return <CompanyLogo {...restProps}>{children}</CompanyLogo>;
 };
