@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "companyName": "CRAFT la",
+    "position": "Internship | Full-stack Web Developer",
+    "description": "Before joining CRAFT la, I didn't like the idea of Web Development since I'm not strong in designs. With this opportunity to be a part of CRAFT la, I really wanted to dive deep into Web Development to see if it would be something I'd love.",
+    "duration": "August 2020 - October 2020",
+    "companyLogo": "/images/company/craftla.jpg",
+    "frameworks": [
+      { "id": 1, "name": "react" },
+      { "id": 2, "name": "apollo" },
+      { "id": 3, "name": "graphql" },
+      { "id": 4, "name": "javascript" },
+      { "id": 5, "name": "css" }
+    ]
+  }
+]

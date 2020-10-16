@@ -1,11 +1,12 @@
 import React from "react";
+import { JumbotronContainer } from "./containers/jumbotron";
+import "./App.css";
 
 function App() {
   return (
-    <p>
-      Hey there! This is a React Web App but there's nothing yet :( but hey
-      there!
-    </p>
+    <>
+      <JumbotronContainer />
+    </>
   );
 }
 
