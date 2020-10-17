@@ -1,11 +1,18 @@
 import styled from "styled-components/macro";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  padding-top: 20px;
+  background: #9ecfc9;
+`;
 
 export const Item = styled.div`
   display: flex;
   margin: 20px;
   overflow: hidden;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 `;
 
 export const Inner = styled.div`

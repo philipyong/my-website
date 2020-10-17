@@ -6,7 +6,7 @@ export const Container = styled.div`
   background-size: cover;
   background-attachment: fixed;
   min-height: 0px;
-
+  background: 49596a;
   @media (max-width: 1000px) {
     background-position: 65% 150%;
   }
