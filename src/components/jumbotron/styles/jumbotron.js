@@ -23,6 +23,9 @@ export const Inner = styled.div`
   margin: auto;
   width: 100%;
 
+  webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
   @media (max-width: 1000px) {
     flex-direction: column;
     max-height: unset;
@@ -89,6 +92,10 @@ export const Framework = styled.img`
 
   &:last-of-type {
     margin-right: 0;
+  }
+
+  @media (max-width: 1000px) {
+    margin-bottom: 10px;
   }
 `;
 
