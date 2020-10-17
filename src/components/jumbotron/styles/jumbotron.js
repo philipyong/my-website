@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 
 export const Container = styled.div`
-  padding-top: 20px;
+  padding: 20px;
   background: #9ecfc9;
 `;
 

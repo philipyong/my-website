@@ -15,6 +15,7 @@ export const Grid = styled.div`
   height: 100%;
   max-width: 1200px;
   grid-template-columns: 30% 40% 30%;
+  grid-template-areas: "left middle right";
   justify-self: start;
 
   background-image: linear-gradient(#49596a, #49596a);
@@ -25,7 +26,6 @@ export const Grid = styled.div`
   background-size: 100% 100%;
   border-radius: 20px;
   color: #fff;
-  grid-template-areas: "left middle right";
 
   &:hover {
   }
@@ -99,7 +99,6 @@ export const Title = styled.h1`
   margin: 0;
   padding: 20px;
   transition: all 0.5s ease;
-  height: 60px;
   color: #9bd5cb;
 `;
 
