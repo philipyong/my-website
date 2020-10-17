@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Container,
+  HeaderTitle,
   Inner,
   Item,
   Group,
@@ -24,6 +25,13 @@ export default function Jumbotron({ children, ...restProps }) {
 
 Jumbotron.Container = function JumbotronContainer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
+};
+
+Jumbotron.HeaderTitle = function JumbotronHeaderTitle({
+  children,
+  ...restProps
+}) {
+  return <HeaderTitle {...restProps}>{children}</HeaderTitle>;
 };
 
 Jumbotron.Group = function JumbotronGroup({ children, ...restProps }) {

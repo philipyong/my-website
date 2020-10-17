@@ -5,6 +5,11 @@ export const Container = styled.div`
   background: #9ecfc9;
 `;
 
+export const HeaderTitle = styled.h1`
+  text-align: center;
+  font-size: 60px;
+`;
+
 export const Item = styled.div`
   display: flex;
   margin: 20px;
