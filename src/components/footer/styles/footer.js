@@ -33,7 +33,7 @@ export const ContactList = styled.div`
   display: flex;
   flex-direction: column;
   border-left: 5px solid #f9fdfe;
-  width: 100%;
+  width: 95%;
   grid-area: contactList;
   justify-self: center;
   align-self: center;
