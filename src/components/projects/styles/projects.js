@@ -49,7 +49,7 @@ export const SubTitle = styled.h2`
 export const Text = styled.p`
   margin-top: 5px;
   color: #fff;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   user-select: none;
   display: none;
   line-height: normal;

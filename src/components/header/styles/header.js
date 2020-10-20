@@ -6,7 +6,6 @@ export const Container = styled.div`
   background-size: cover;
   background-attachment: fixed;
   min-height: 0px;
-  background: 49596a;
   @media (max-width: 1000px) {
     background-position: 65% 150%;
   }
@@ -35,6 +34,7 @@ export const SubTitle = styled.h2`
 export const Strong = styled.h1`
   font-size: 120px;
   margin-top: 0;
+  margin-bottom: 20px;
 
   @media (max-width: 1000px) {
     font-size: 96px;
@@ -42,5 +42,20 @@ export const Strong = styled.h1`
 
   @media (max-width: 770px) {
     font-size: 80px;
+  }
+`;
+
+export const Button = styled.button`
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 20px;
+  color: #3f5263;
+  border: 1px solid #3f5263;
+  cursor: pointer;
+
+  @media (max-width: 1000px) {
+    border: 1px solid white;
+    color: white;
   }
 `;

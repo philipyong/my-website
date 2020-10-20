@@ -24,7 +24,6 @@ export const Grid = styled.div`
   background-position: 50% 50%;
   transition: background-size 0.5s, color 0.5s;
   background-size: 100% 100%;
-  border-radius: 20px;
   color: #fff;
 
   &:hover {

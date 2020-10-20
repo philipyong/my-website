@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Title, SubTitle, Strong } from "./styles/header";
+import { Container, Title, SubTitle, Strong, Button } from "./styles/header";
 
 export default function Header({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -15,4 +15,8 @@ Header.SubTitle = function HeaderSubTitle({ children, ...restProps }) {
 
 Header.Strong = function HeaderStrong({ children, ...restProps }) {
   return <Strong {...restProps}>{children}</Strong>;
+};
+
+Header.Button = function HeaderButton({ children, ...restProps }) {
+  return <Button {...restProps}>{children}</Button>;
 };
