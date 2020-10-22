@@ -29,11 +29,16 @@
       },
       {
         "id": 5,
+        "name": "aws-lambda",
+        "link": "https://aws.amazon.com/lambda/"
+      },
+      {
+        "id": 6,
         "name": "aws-s3",
         "link": "https://aws.amazon.com/s3/"
       },
-      { "id": 6, "name": "javascript", "link": "https://www.javascript.com/" },
-      { "id": 7, "name": "css", "link": "https://en.wikipedia.org/wiki/CSS" }
+      { "id": 7, "name": "javascript", "link": "https://www.javascript.com/" },
+      { "id": 8, "name": "css", "link": "https://en.wikipedia.org/wiki/CSS" }
     ],
     "link": "https://craftla.com.my/"
   },
