@@ -8,7 +8,7 @@ export function ProjectsContainer() {
       <Projects.HeaderTitle>My Projects</Projects.HeaderTitle>
       <Projects.Hint>Hold to find out more!</Projects.Hint>
       <Projects>
-        {projectsData.map((item) => (
+        {projectsData.reverse().map((item) => (
           <Projects.Item
             key={item.id}
             onClick={() => window.open(item.link, "_blank")}
