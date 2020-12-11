@@ -2,17 +2,48 @@
   {
     "id": 1,
     "direction": "right",
+    "companyName": "Wizard Within",
+    "position": "Internship | Full-stack PHP Web Developer",
+    "description": [
+      {
+        "id": 1,
+        "direction": "right",
+        "content": "Wizard Within is a company that develops customized storybooks for children. What makes that interesting for me as a web developer is that I get to program a preview of the book along with the customized names. Since the first developed book has 3 different names with different story combinations according to the first letter of each of the names, I would then need to program the book preview app to show the customized pages along with the different pages/images along with the inputted name."
+      },
+      {
+        "id": 2,
+        "direction": "right",
+        "content": "As the only web developer in the company, I'm responsible to maintain and further develop the website. I mainly use PHP, opencart and WordPress along with phpMyAdmin."
+      }
+    ],
+    "duration": "December 2020 - Present",
+    "companyLogo": "/images/company/wizard-within.png",
+    "frameworks": [
+      { "id": 1, "name": "php", "link": "https://www.php.net/" },
+      { "id": 2, "name": "opencart", "link": "https://www.opencart.com/" },
+      { "id": 3, "name": "wordpress", "link": "https://wordpress.com/" },
+      {
+        "id": 4,
+        "name": "phpmyadmin",
+        "link": "https://www.phpmyadmin.net/"
+      }
+    ],
+    "link": "https://wizardwithin.com/"
+  },
+  {
+    "id": 2,
+    "direction": "left",
     "companyName": "CRAFT la",
     "position": "Internship | Full-stack Web Developer",
     "description": [
       {
         "id": 1,
-        "direction": "right",
+        "direction": "left",
         "content": "Before joining CRAFT la, I didn't like the idea of Web Development since I'm not strong in designs. With this opportunity to be a part of CRAFT la, I really wanted to dive deep into Web Development to see if it would be something I'd love. Through this internship, I got to mess with React and GraphQL as an introduction to the world of Web Dev and I fell in love with it!"
       },
       {
         "id": 2,
-        "direction": "right",
+        "direction": "left",
         "content": "During this internship, I was tasked with developing an Order Management System (OMS) using a single-page application. I developed the front-end using React while styling with PrimeReact, I then used Apollo GraphQL as the back-end. I was also tasked with creating small responsive React Apps that will be used on the company’s WordPress site."
       }
     ],
@@ -43,19 +74,19 @@
     "link": "https://craftla.com.my/"
   },
   {
-    "id": 2,
-    "direction": "left",
+    "id": 3,
+    "direction": "right",
     "companyName": "CTI Resources",
     "position": "Internship | Computer Science Intern",
     "description": [
       {
         "id": 1,
-        "direction": "left",
+        "direction": "right",
         "content": "My first internship experience! After finishing my first semester at Western Michigan University, I went back to my home country, Malaysia, during the summer break. Without much to do, I decided to seek an internship to get to know more about my degree. After sending out my resume, I received an opportunity to work at CTI Resources!"
       },
       {
         "id": 2,
-        "direction": "left",
+        "direction": "right",
         "content": "During this internship, I was only skilled with Java but had to work using C#. Since C# and Java are kind of similar, I understood it pretty quickly. Since the company does SCADA, I got to mess with Azure Cloud. I was then tasked to develop a C# program to communicate with it. After that, I was given a RaspBerry Pi to develop an ASP.net site that runs within the company’s network. I also assisted in the testing of new products in the company."
       }
     ],
